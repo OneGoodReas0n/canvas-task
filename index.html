@@ -5,8 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./dist/style.css" />
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Canvas</title>
   </head>
-  <body></body>
+  <body>
+    <nav class="header">
+      <div class="menu-btn-project-name-text">
+        <div class="menu-btn btn">
+          <span class="menu-btn__line"></span>
+          <span class="menu-btn__line"></span>
+          <span class="menu-btn__line"></span>
+        </div>
+        <span class="project-name-text">CodeJam - Canvas</span>
+      </div>
+      <div class="settings-btn btn">
+        <span class="settings-btn__round"></span>
+        <span class="settings-btn__round"></span>
+        <span class="settings-btn__round"></span>
+      </div>
+    </nav>
+
+    <div class="content">
+      <div class="left-wrapper">
+        <div class="tools-bar bar">
+          <div class="tools-bar__item btn">
+            <img
+              src="./assets/icons/fill-drip.svg"
+              alt=""
+              class="item-icon"
+              width="20"
+              height="18"
+            />
+            <span class="item-name item-text">Paint bucket</span>
+          </div>
+          <div class="tools-bar__item btn">
+            <img
+              src="./assets/icons/eye-dropper.svg"
+              alt=""
+              class="item-icon"
+              width="20"
+              height="20"
+            />
+            <span class="item-name item-text">Choose color</span>
+          </div>
+          <div class="tools-bar__item btn">
+            <img
+              src="./assets/icons/arrows-alt.svg"
+              alt=""
+              class="item-icon"
+              width="20"
+              height="20"
+            />
+            <span class="item-name item-text">Move</span>
+          </div>
+          <div class="tools-bar__item btn">
+            <img
+              src="./assets/icons/exchange-alt.svg"
+              alt=""
+              class="item-icon"
+              width="20"
+              height="20"
+            />
+            <span class="item-name item-text">Transform</span>
+          </div>
+        </div>
+        <div class="colors-bar bar">
+          <div class="colors-bar__item btn">
+            <div class="item-color-block">
+              <span class="color-value-block__color"></span>
+            </div>
+            <span class="item-color-text item-text">Current color</span>
+          </div>
+          <div class="colors-bar__item btn">
+            <div class="item-color-block">
+              <span class="color-value-block__color"></span>
+            </div>
+            <span class="item-color-text item-text">Prev color</span>
+          </div>
+          <div class="colors-bar__item btn">
+            <div class="item-color-block">
+              <span class="item-color-block__color"></span>
+            </div>
+            <span class="item-color-text item-text">red</span>
+          </div>
+          <div class="colors-bar__item btn">
+            <div class="item-color-block">
+              <span class="color-value-block__color"></span>
+            </div>
+            <span class="item-color-text item-text">blue</span>
+          </div>
+        </div>
+      </div>
+      <div class="right-wrapper">
+        <div class="canvas-wrapper">
+          <canvas id="canvas" class="canvas" width="512" height="512"></canvas>
+        </div>
+        <div class="select-list bar">
+          <div class="select-list__item btn" id="4x4">
+            <div class="item-selector">
+              <span class="item-selector__fill"></span>
+            </div>
+            <span class="item-name item-text">4x4</span>
+          </div>
+          <div class="select-list__item btn" id="32x32">
+            <div class="item-selector">
+              <span class="item-selector__fill"></span>
+            </div>
+            <span class="item-name item-text">32x32</span>
+          </div>
+          <div class="select-list__item btn" id="image">
+            <div class="item-selector">
+              <span class="item-selector__fill"></span>
+            </div>
+            <span class="item-name item-text">Image</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>
